@@ -1,3 +1,4 @@
+DOCTYPE!
 <html>
     <head>
       <!-- Include Tailwind CSS in your project -->
