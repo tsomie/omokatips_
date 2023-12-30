@@ -14,7 +14,7 @@
     </style>
 </head>
 <body class="bg-gray-100">
-<header class="sticky top-0 bg-green-500 shadow-md z-10" style="height: 50px;">
+<!-- <header class="sticky top-0 bg-green-500 shadow-md z-10" style="height: 50px;">
                 <!-- Use flex and items-center to align the logo and the menu -->
                     <div class="container mx-auto flex items-center justify-between py-4 px-6">
                           <!-- Use an image tag for the logo and set its height with h-12 -->
@@ -23,8 +23,37 @@
 			    </a>
                      </div>
 </header>
+-->	
+<header class=" sticky top-0 bg-gray-800 shadow-md z-10 text-white p-4" style="height: 50px;">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="w-10 h-7 mr-2">
+        </div>
 
+        <!-- Menu Icon (Hamburger) -->
+        <button id="menuToggle" class="lg:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
 
+        <!-- Menu Items -->
+        <nav class="hidden lg:flex items-center space-x-4">
+            <a href="#" class="hover:text-gray-300">Home</a>
+            <a href="#" class="hover:text-gray-300">About</a>
+            <a href="#" class="hover:text-gray-300">Services</a>
+            <a href="#" class="hover:text-gray-300">Contact</a>
+        </nav>
+    </div>
+</header>
+<script>
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        document.querySelector('nav').classList.toggle('hidden');
+    });
+</script>
     <div class="bg-green-500 text-white p-4" style="background-image: url('alianz.jpg'); background-size: cover;">
         <h1 class="text-3xl font-bold">OmokaTips</h1>
         <p class="text-lg mt-2">Welcome to OmokaTips! Our platform provides consistent and accurate Daily predictions delivering over 100% guaranteed Sure 2+ and Sure 5+ odds. Join us for a winning experience every day.</p>
